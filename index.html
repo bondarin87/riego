@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Riego Garden: ingeniería de riego automatizado con ESP32, diseño hidráulico avanzado y control inteligente para áreas verdes."
+    />
+    <title>Riego Garden | Automatización de Riego Inteligente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="boot-loader" id="bootLoader" aria-live="polite" aria-label="Inicializando Riego Garden OS">
+      <div class="boot-frame">
+        <div class="boot-topline">
+          <span>RIEGO.GARDEN OS</span>
+          <span>BOOT COMP v3.2</span>
+        </div>
+        <div class="boot-terminal" id="bootTerminal"></div>
+        <div class="boot-progress">
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header" id="inicio">
+      <nav class="navbar" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Riego Garden inicio">
+          <span>RG</span>
+        </a>
+        <div class="nav-links">
+          <a href="#inicio">Inicio</a>
+          <a href="#tecnologia">Tecnología</a>
+          <a href="#galeria">Galería</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Microcontroladores ESP32 + hidráulica profesional</p>
+          <h1 id="hero-title">La Evolución del Riego: Automatización con Precisión de Ingeniería</h1>
+          <p class="hero-copy">
+            Diseño hidráulico avanzado y control inteligente desde tu smartphone para jardines y
+            proyectos agrícolas exigentes.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">
+              <span>Cotizar diseño técnico</span>
+            </a>
+            <a class="btn btn-ghost" href="#tecnologia">
+              <span>Ver tecnología</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-status reveal" aria-label="Estado del sistema">
+          <span>SYSTEMS ONLINE</span>
+          <span>ESP32 READY</span>
+          <span>PRESSURE STABLE</span>
+        </div>
+      </section>
+
+      <section class="tech-section section-pad" id="tecnologia" aria-labelledby="tech-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Nuestras ventajas</p>
+          <h2 id="tech-title">Riego inteligente construido desde la ingeniería</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 18h16M6 16V8m6 8V4m6 12v-6" />
+                <path d="M4 8h4l4-4 4 6h4" />
+              </svg>
+            </div>
+            <h3>Cálculo Hidráulico de Precisión</h3>
+            <p>
+              Balance perfecto entre Presión Estática y Dinámica. Sin caídas de presión, optimizando
+              cada gota de agua mediante factores de fricción de Christiansen.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="5" y="5" width="14" height="14" rx="2" />
+                <path d="M9 1v4m6-4v4M9 19v4m6-4v4M1 9h4m-4 6h4m14-6h4m-4 6h4" />
+                <path d="M9 12h6" />
+              </svg>
+            </div>
+            <h3>Hardware de Grado Industrial</h3>
+            <p>
+              Cerebros de control electrónico avanzados basados en arquitectura ESP32. Diseñados con
+              aislamiento eléctrico total para proteger el sistema contra sobretensiones y descargas
+              en el campo, complementados con un sistema de contingencia 100% offline que garantiza
+              la continuidad del riego incluso si se interrumpe la conectividad a internet.
+            </p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3c4 4 6 7 6 11a6 6 0 0 1-12 0c0-4 2-7 6-11Z" />
+                <path d="M8 15c2 1 6 1 8-2" />
+              </svg>
+            </div>
+            <h3>Lógica Híbrida de Riego</h3>
+            <p>
+              Algoritmos avanzados de "Ciclo y Remojo" para terrenos con pendiente o suelos
+              arcillosos, evitando escorrentías y optimizando la absorción.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery-section section-pad" id="galeria" aria-labelledby="gallery-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Portafolio de proyectos</p>
+          <h2 id="gallery-title">Instalaciones, campo y control inteligente</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal"><img src="img/foto1.jpeg" alt="Proyecto de riego automatizado 1" /></figure>
+          <figure class="gallery-item reveal"><img src="img/foto2.jpeg" alt="Proyecto de riego automatizado 2" /></figure>
+          <figure class="gallery-item reveal"><img src="img/foto3.jpeg" alt="Proyecto de riego automatizado 3" /></figure>
+          <figure class="gallery-item reveal"><img src="img/foto4.jpeg" alt="Proyecto de riego automatizado 4" /></figure>
+          <figure class="gallery-item reveal"><img src="img/foto5.jpeg" alt="Proyecto de riego automatizado 5" /></figure>
+          <figure class="gallery-item reveal"><img src="img/foto6.jpeg" alt="Proyecto de riego automatizado 6" /></figure>
+          <figure class="gallery-item reveal"><img src="img/foto7.jpeg" alt="Proyecto de riego automatizado 7" /></figure>
+          <figure class="gallery-item reveal"><img src="img/foto8.JPG" alt="Proyecto de riego automatizado 8" /></figure>
+          <figure class="gallery-item reveal"><img src="img/foto9.jpeg" alt="Proyecto de riego automatizado 9" /></figure>
+          <figure class="gallery-item reveal"><img src="img/foto10.JPG" alt="Proyecto de riego automatizado 10" /></figure>
+        </div>
+      </section>
+
+      <section class="contact-section section-pad" id="contacto" aria-labelledby="contact-title">
+        <div class="contact-panel reveal">
+          <div>
+            <p class="eyebrow">Cotización profesional</p>
+            <h2 id="contact-title">Diseña un sistema de riego que responda al terreno, al clima y a tu presupuesto.</h2>
+            <p>
+              Conversemos sobre presión, sectores, pendiente, caudal disponible y automatización para
+              convertir tu área verde en un sistema eficiente y confiable.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a
+              class="whatsapp-btn"
+              href="https://wa.me/51936276938?text=Hola%2C%20me%20interesa%20dise%C3%B1ar%20un%20sistema%20de%20riego%20automatizado%20con%20Riego%20Garden"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19.1 4.9A9.9 9.9 0 0 0 3.6 16.8L2.4 21.4l4.7-1.2A9.9 9.9 0 0 0 21.9 12a9.8 9.8 0 0 0-2.8-7.1Zm-7.1 15a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.7.7-2.7-.2-.3A8 8 0 1 1 12 19.9Zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5L9.8 7c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.3s1 2.7 1.1 2.9c.1.2 1.9 3 4.7 4.1.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1-.1-.2-.3-.3-.5-.4Z" />
+              </svg>
+              <span>WhatsApp</span>
+            </a>
+            <a class="email-link" href="mailto:bondarin87@gmail.com">bondarin87@gmail.com</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Created by <a href="https://www.instagram.com/serbondar" target="_blank" rel="noopener noreferrer">SB</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
