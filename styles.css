@@ -791,9 +791,20 @@ h3 {
   margin: 0;
 }
 
+.site-footer p + p {
+  margin-top: 8px;
+}
+
 .site-footer a {
   color: #fff;
   font-weight: 800;
+}
+
+.footer-floppy {
+  display: inline-block;
+  margin-right: 7px;
+  transform-origin: 50% 58%;
+  animation: floppyBreath 2.4s ease-in-out infinite;
 }
 
 .reveal {
@@ -893,6 +904,18 @@ h3 {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0) scaleX(1);
+  }
+}
+
+@keyframes floppyBreath {
+  0%,
+  100% {
+    transform: scale(1) rotate(-3deg);
+    filter: drop-shadow(0 0 0 rgba(53, 201, 255, 0));
+  }
+  50% {
+    transform: scale(1.13) rotate(5deg);
+    filter: drop-shadow(0 0 10px rgba(53, 201, 255, 0.38));
   }
 }
 
