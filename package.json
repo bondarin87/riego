@@ -2,12 +2,10 @@
   "name": "riego-garden-panel",
   "version": "1.0.0",
   "description": "Node-RED para riego.garden",
-  "main": "node_modules/node-red/red.js",
   "scripts": {
-    "start": "node-red --port $PORT --userDir ."
+    "start": "node_modules/.bin/node-red --port $PORT --userDir ."
   },
   "dependencies": {
-    "express": "^4.19.2",
     "node-red": "^3.1.9",
     "@flowfuse/node-red-dashboard": "^1.0.0"
   }
