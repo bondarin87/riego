@@ -17,7 +17,12 @@ module.exports = {
     },
     
     // Esto repara el error "Cannot GET /dashboard/" forzando la ruta correcta
-    ui: { path: "dashboard" },
+    // Configuración correcta para Dashboard 2.0 en Node-RED v4
+    dashboard: {
+        ui: {
+            path: "dashboard"
+        }
+    },
     
     functionGlobalContext: {},
     logging: {
