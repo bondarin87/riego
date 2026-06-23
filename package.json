@@ -1,0 +1,13 @@
+{
+  "name": "riego-garden-panel",
+  "version": "1.0.0",
+  "description": "Node-RED para riego.garden",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-red --userDir . --settings settings.js"
+  },
+  "dependencies": {
+    "node-red": "^3.1.0",
+    "@flowfuse/node-red-dashboard": "^1.0.0"
+  }
+}
