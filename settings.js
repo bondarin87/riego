@@ -6,16 +6,18 @@ module.exports = {
     flowFile: 'flows.json',
     userDir: __dirname,
     
-    // Aquí activamos la seguridad usando tus variables de Render
+    // Configuración de seguridad oficial
     adminAuth: {
         type: "credentials",
         users: [{
-            username: process.env.NODE_RED_USERNAME || "admin",
-            // Esta línea acepta la contraseña en texto plano desde Render
-            password: process.env.NODE_RED_PASSWORD ? require('crypto').createHash('sha256').update(process.env.NODE_RED_PASSWORD).digest('hex') : "admin",
+            username: "sergei", // <-- REEMPLAZA: Pon aquí tu nombre de usuario entre las comillas
+            password: "$2a$12$MFvOMOd1xX2u93fhZQPt/OippAqIybCfQip5YJx0xQ4PQ3x3jScIq", // <-- REEMPLAZA: Pega aquí todo el texto largo que empieza con $2a$ o $2b$
             permissions: "*"
         }]
     },
+    
+    // Esto repara el error "Cannot GET /dashboard/" forzando la ruta correcta
+    ui: { path: "dashboard" },
     
     functionGlobalContext: {},
     logging: {
