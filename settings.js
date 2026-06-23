@@ -18,7 +18,9 @@ module.exports = {
     
     // Esto repara el error "Cannot GET /dashboard/" forzando la ruta correcta
     // Configuración correcta para Dashboard 2.0 en Node-RED v4
-    dashboard: {
+   // Configuración oficial para cambiar la ruta en Dashboard 2.0
+    pluginMqtt: {},
+    "node-red-dashboard-2": {
         ui: {
             path: "dashboard"
         }
