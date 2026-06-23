@@ -4,7 +4,7 @@
   "description": "Node-RED para riego.garden",
   "main": "node_modules/node-red/red.js",
   "scripts": {
-    "start": "node node_modules/node-red/red.js --port $PORT --userDir ."
+    "start": "node node_modules/node-red/red.js --port $PORT --userDir . --settings settings.js"
   },
   "dependencies": {
     "node-red": "^4.0.2",
